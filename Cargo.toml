@@ -1,0 +1,21 @@
+[package]
+name = "custom_error"
+version = "0.1.0"
+edition = "2021"
+
+
+[lints.rust]
+unsafe_code = "forbid"
+#unused =    "allow"
+
+[dependencies]
+derive_more = { version = "1.0.0-beta.6", features = ["from"] }
+
+
+[package.metadata.scripts]
+clean = "cargo clean"
+check = "cargo check"
+run = "cargo run"
+watch = "cargo watch -x run"
+build = "cargo build"
+release = "cargo build --release"
